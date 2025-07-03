@@ -1,0 +1,247 @@
+:root {
+    --theme-text-green: #5ea51d;
+    --theme-text-white: #fff;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    max-width: 1320px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+html,
+body {
+    font-family: 'Nunito';
+}
+
+
+a {
+    text-decoration: none;
+    display: inline-block;
+    color: inherit;
+}
+
+ul li {
+    list-style: none;
+}
+
+img {
+    width: 100%;
+    display: block;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.col {
+    width: 100%;
+    padding: 15px;
+}
+
+.d-flex {
+    display: flex;
+}
+
+.justify-content-center {
+    justify-content: center;
+}
+
+.justify-content-between {
+    justify-content: space-between;
+}
+
+.align-items-center {
+    align-items: center;
+}
+
+.mt-5 {
+    margin-top: 5rem;
+}
+
+/*OUR-PROPERITES SECTION START*/
+.Our-Properties {
+    text-align: center;
+    background-color: #f7f7f7cb;
+}
+
+.Our-Properties .properties-heading h2 {
+    font-size: 50px;
+    font-weight: 700;
+    line-height: 1.4;
+    margin-top: 1rem;
+    color: #000000cc;
+}
+
+.Our-Properties .properties-heading h6 {
+
+    font-size: 13px;
+    color: var(--theme-text-green);
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+
+.Our-Properties .p-body {
+    box-shadow: rgba(17, 17, 26, 0.05) 0px 1px 0px, rgba(17, 17, 26, 0.1) 0px 0px 8px;
+    margin-bottom: 50px;
+}
+
+
+.Our-Properties .p-body .img {
+    display: block;
+    width: 100%;
+    height: 250px;
+    position: relative;
+    z-index: 0;
+    background-size: cover;
+}
+
+.Our-Properties .p-body .img p.price {
+    position: absolute;
+    bottom: 5px;
+    left: 25px;
+    color: var(--theme-text-white);
+    background: var(--theme-text-green);
+    border-radius: 4px;
+    padding: 3px 7px;
+}
+
+.Our-Properties .img.img-property:after {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    content: '';
+    opacity: .3;
+    background: #000000;
+    z-index: -1;
+    transition: all 0.3s ease;
+}
+
+.Our-Properties .p-body:hover .img::after {
+    opacity: 0;
+}
+
+.Our-Properties .text {
+    box-shadow: rgba(0, 0, 0, 0.06) 0px 2px 4px 0px inset;
+    position: relative;
+    transition: all 0.3s ease;
+    background: var(--theme-text-white);
+    padding: 25px;
+}
+
+.Our-Properties .text .list-team {
+    margin-bottom: 25px;
+}
+
+.Our-Properties .text .list-team .img {
+    width: 34px;
+    height: 34px;
+    border-radius: 50%;
+    background-size: cover;
+}
+
+.Our-Properties .text .list-team h3 {
+    font-size: 14px;
+    font-weight: 600;
+    color: #00000099;
+    margin-left: 10px;
+}
+
+.Our-Properties .text .list-team span {
+    margin-left: 46px;
+    color: #999999;
+}
+
+.Our-Properties .text .info {
+    margin-bottom: 25px;
+    margin-right: 25px;
+}
+
+.Our-Properties .text .info h3 {
+    font-size: 20px;
+    margin-bottom: 5px;
+    font-weight: 600;
+    margin-right: 2rem;
+}
+
+.Our-Properties .text .info .location {
+    font-size: 13px;
+    margin-right: 6rem;
+}
+
+.Our-Properties .text .info .location i {
+    color: var(--theme-text-green);
+    margin-right: 4px;
+}
+
+.Our-Properties .text .info .location .sale {
+    background: var(--theme-text-green);
+    color: var(--theme-text-white);
+    padding: 0 4px;
+    margin-left: 10px;
+}
+
+.Our-Properties .img p.price span.old-price {
+    color: rgba(0, 0, 0, 0.4);
+    color: rgba(255, 255, 255, 0.3);
+    position: relative;
+    margin-right: 8px;
+}
+
+.Our-Properties .img p.price span.old-price:after {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 1px;
+    background: rgba(255, 255, 255, 0.2);
+    content: '';
+}
+
+.Our-Properties .img p.price span.orig-price {
+    color: var(--theme-text-white);
+}
+
+.Our-Properties .text .location .rent {
+    background: #fd5c64;
+    color: var(--theme-text-white);
+    padding: 0 4px;
+    margin-left: 10px;
+}
+
+.Our-Properties .text .icons {
+    margin-top: 1rem;
+    margin-right: 30px;
+}
+
+.Our-Properties .text .icons ul {
+    margin-top: 1rem;
+    margin-bottom: 27px;
+}
+
+.Our-Properties .text .icons ul li {
+    font-size: 16px;
+    margin-right: 10px;
+    display: inline-block;
+    list-style: none;
+    color: #999999;
+}
+
+.Our-Properties .text .icons ul li span .flaticon-bed,
+.Our-Properties .text .icons ul li span .flaticon-bathtub,
+.Our-Properties .text .icons ul li span .flaticon-blueprint {
+    width: 15px;
+    margin-right: 0.5rem;
+}
+/*OUR-PROPERTIES SECTION END*/
