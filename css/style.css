@@ -114,13 +114,37 @@ img {
     padding: 3px 7px;
 }
 
+.Our-Properties .img p.price span.old-price {
+    color: rgba(0, 0, 0, 0.4);
+    color: rgba(255, 255, 255, 0.3);
+    position: relative;
+    margin-right: 8px;
+}
+
+.Our-Properties .img p.price span.old-price:after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 1px;
+    background: rgba(255, 255, 255, 0.2);
+    
+}
+
+.Our-Properties .img p.price span.orig-price {
+    color: var(--theme-text-white);
+}
+
+
 .Our-Properties .img.img-property:after {
+    content: '';
     position: absolute;
     top: 0;
     left: 0;
     right: 0;
     bottom: 0;
-    content: '';
     opacity: .3;
     background: #000000;
     z-index: -1;
@@ -191,27 +215,6 @@ img {
     margin-left: 10px;
 }
 
-.Our-Properties .img p.price span.old-price {
-    color: rgba(0, 0, 0, 0.4);
-    color: rgba(255, 255, 255, 0.3);
-    position: relative;
-    margin-right: 8px;
-}
-
-.Our-Properties .img p.price span.old-price:after {
-    position: absolute;
-    top: 50%;
-    left: 0;
-    right: 0;
-    width: 100%;
-    height: 1px;
-    background: rgba(255, 255, 255, 0.2);
-    content: '';
-}
-
-.Our-Properties .img p.price span.orig-price {
-    color: var(--theme-text-white);
-}
 
 .Our-Properties .text .location .rent {
     background: #fd5c64;
